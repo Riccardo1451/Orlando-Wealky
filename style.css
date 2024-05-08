@@ -132,12 +132,16 @@ p{
     list-style: none;
     padding: 0;
 }
+
 .navbar ul li {
-    display: inline-block;
+
     margin-right: 0; /* Rimuovi il margine destro */
     margin-bottom: 0;
     padding-right: 8px; /* Aggiungi il padding destro */
 
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
 
 }
 .navbar ul li a{
@@ -152,17 +156,16 @@ p{
 }
 #newItem{
 
-    background-color: rgb(247,148,30);
-
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 #newItem a{
+    background-color: rgb(247,148,30);
     color: white;
-    padding:0;
-    margin:0;
+    padding:1px;
+    margin-bottom:0;
 }
 .navbar ul li a:hover {
     background-color: rgb(247,148,30);
@@ -188,8 +191,9 @@ p{
     background-color: rgb(247,148,30);
     color: white;
 
-    margin: auto;
-    padding: 3px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 
 .item{
@@ -316,8 +320,10 @@ p{
     padding:0 30px 0 30px;
 
 }
-.all-event a{ /* TODO: sistemare la possibilità di cliccaggio*/
-
+.all-event a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #9a9a9a;
 }
 .all-event a:hover{
     color:#F7941EFF ;
@@ -326,7 +332,7 @@ p{
     color: #9a9a9a;
 }
 #greyLine{
-    border: 0.5px solid #9a9a9a;
+    border: thin solid #9a9a9a;
     margin-top:5px;
 }
 
@@ -356,6 +362,31 @@ p{
     font-family: "Montserrat", sans-serif;
 }
 
-.music:hover {
+.music a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.music a:hover {
+    color: #F7941EFF;
+}
+.movies a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.movies a:hover {
+    color: #F7941EFF;
+}
+.dining a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.dining a:hover {
+    color: #F7941EFF;
+}
+.events a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.events a:hover {
     color: #F7941EFF;
 }
