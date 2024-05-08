@@ -119,13 +119,13 @@ p{
 
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navbar{
     width: 1020px;
     background-color: white;
 
-    z-index: 9999;
 }
 
 .navbar ul{
@@ -207,7 +207,7 @@ p{
     height: 2000px;
 
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
 }
 
@@ -316,10 +316,8 @@ p{
     padding:0 30px 0 30px;
 
 }
-.all-event span a{ /* TODO: sistemare la possibilità di cliccaggio*/
-    text-decoration: none;
-    cursor: pointer;
-    color: #9a9a9a;
+.all-event a{ /* TODO: sistemare la possibilità di cliccaggio*/
+
 }
 .all-event a:hover{
     color:#F7941EFF ;
@@ -359,6 +357,5 @@ p{
 }
 
 .music:hover {
-    background-color:#F7941EFF ;
-    color: white;
+    color: #F7941EFF;
 }
