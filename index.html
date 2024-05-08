@@ -1,0 +1,118 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Weekly</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="title">
+    <a href="#">BEST OF LOREM IPSUM</a>
+    <div id="privacy">
+        <i class="fas fa-cog"></i>
+        <a href="#">Lorem Ipsum</a>
+    </div>
+</div>
+
+<div id="support">
+    <a href="#" id="support-white">Lorem Ipsum</a>
+</div>
+
+<div class="Logo-conteiner">
+    <div class="logo">
+        <a href="#"><img src="https://placehold.co/230x97"></a>
+    </div>
+</div>
+<div class="sticky-nav">
+    <div class="navbar"> <!-- drop menu-->
+        <ul class="bar open-sans-p"> <!--menu-->
+            <li>
+                <a href="#" id="prim">Lorem Ipsum</a>
+
+            </li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#"><div id="rettOrange">Lorem Ipsum</div></a></li>
+            <li><div class="item"><a href="#"><i class="fas fa-user"></i></a></div></li>
+            <li><div class="item"><a href="#"><i class="fas fa-search"></i></a></div></li>
+        </ul>
+        <hr id="hrOrange">
+    </div>
+</div>
+
+<div class="undercontent">
+
+    <div class = "main-content">
+        <div class="left-content">
+            <div class="main-news">
+                <img src="https://placehold.co/644x361">
+                <h3 class="montserrat-h3">Lorem Ipsum è un linguaggio fatto per sostituire parti di testo con un placeholder deriva dal latino...</h3>
+                <p>paragrafo del relativo lorem ipsum riguardo l'immagine e la notizia</p>
+                <p><em>By Riccardo Fantechi | Maggio 2024</em></p>
+            </div>
+            <div class="double-news">
+                <div class="news1">
+                    <img src="https://placehold.co/317x196">
+                    <p class="montserrat-h3">Lorem Ipsum è un linguaggio fatto per sostituire parti di testo con un placeholder deriva dal latino...</p>
+                    <p>paragrafo relativo alla sottonotizia principale riguardante il lorem ipsum</p>
+                    <p><em>By Riccardo Fantechi | Maggio 2024</em></p>
+
+                </div>
+                <div class="news2">
+                    <img src="https://placehold.co/317x196">
+                    <p class="montserrat-h3">Lorem Ipsum è un linguaggio fatto per sostituire parti di testo con un placeholder deriva dal latino...</p>
+                    <p><em>By Riccardo Fantechi | Maggio 2024</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="intestazione-right-content">
+                <h3>EVENTS</h3>
+            </div>
+            <div class="news-research"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    /*Gestione della scrollata*/
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.bar');
+        var newItem = document.createElement('li');
+        newItem.innerHTML = '<a href="#">OW</a>';
+
+        if (window.scrollY > 45) {
+            if (!navbar.querySelector('#newItem')) {
+                newItem.id = 'newItem';
+                navbar.insertBefore(newItem, navbar.firstChild);
+            }
+        } else {
+            var addedItem = document.getElementById('newItem');
+            if (addedItem) {
+                addedItem.parentNode.removeChild(addedItem);
+            }
+        }
+    });
+</script>
+</body>
+
+
+</html>

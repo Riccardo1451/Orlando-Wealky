@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Lato, Helvetica, Arial, sans-serif;
+}
+
+.montserrat-h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.open-sans-p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+h3{
+
+    margin-top:6px;
+}
+p{
+    margin-top: 10px;
+}
+
+.title{
+    background-color: rgb(247,148,30);
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.title a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+}
+#support{
+    height: auto;
+    width: 130px;
+    background-color: rgb(247,148,30);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    cursor:pointer;
+
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+
+    position: fixed;
+    left: 100%;
+    top: 50%;
+
+    transition: 0.5s;
+
+}
+#support-white{
+    color: white;
+    text-decoration: none;
+}
+#support:hover{
+    background-color: black;
+    text-decoration: none;
+}
+
+#privacy{
+    padding: 5px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    width:auto;
+    background-color: rgb(54, 139, 214);
+
+    border-radius: 0 0 3px 3px;
+}
+.fa-cog{
+    color: white;
+}
+
+
+.Logo-conteiner {
+    width: 100%;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+.logo{
+    width: 1020px;
+    margin: 5px;
+
+}
+.sticky-nav{
+    width: 100%;
+    height: 23px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    width: 1020px;
+    background-color: white;
+
+    z-index: 9999;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-right: 0; /* Rimuovi il margine destro */
+    margin-bottom: 0;
+    padding-right: 8px; /* Aggiungi il padding destro */
+
+
+}
+.navbar ul li a{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+
+    margin: 4px;
+
+    transition: 100ms;
+}
+#newItem{
+
+    background-color: rgb(247,148,30);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#newItem a{
+    color: white;
+    padding:0;
+    margin:0;
+}
+.navbar ul li a:hover {
+    background-color: rgb(247,148,30);
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.bar {
+    display: flex; /* Imposta il layout flessibile */
+    flex-wrap: nowrap; /* Evita che gli elementi vadano a capo */
+}
+
+.bar li {
+    flex: 1; /* Distribuisci lo spazio disponibile in modo equo tra gli elementi */
+    white-space: nowrap; /* Impedisce alle voci di andare a capo */
+}
+#hrOrange{
+    border: 0.5px solid rgb(247,148,30);
+}
+#rettOrange{
+    background-color: rgb(247,148,30);
+    color: white;
+
+    margin: auto;
+    padding: 3px;
+}
+
+.item{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+.undercontent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    height: 2000px;
+
+    position: relative;
+    z-index: -1;
+
+}
+
+.main-content{
+    width: 60%;
+
+    margin-top:40px;
+    padding: 0 10px;
+    position: relative;
+
+}
+
+.left-content{
+    width: calc(100%*2/3);
+}
+.main-news{
+    width:100%;
+}
+.double-news{
+    margin-top:50px;
+    position: relative;
+}
+.news1{
+    width:49%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.news2{
+    width:49%;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.right-content {
+    width: calc(100% * 1 / 3);
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.intestazione-right-content{
+
+}
+.intestazione-right-content h3{
+    font-size: 23px;
+    color: #F7941EFF;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+
+    margin:0;
+}
+.intestazione-right-content h3:before{
+    content:"";
+    border: 1px solid #9a9a9a;
+    position: absolute;
+    width: 80%;
+    top: 13.25px;
+    left: -110px;
+}
+.intestazione-right-content h3:after{
+    content: "";
+    border: 1px solid #9a9a9a;
+    position: absolute;
+    width: 80%;
+    top: 13.25px;
+    right: -110px;
+}
+
+
