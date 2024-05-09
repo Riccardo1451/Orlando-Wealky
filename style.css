@@ -62,6 +62,7 @@ p{
     position: fixed;
     left: 100%;
     top: 50%;
+    z-index: 20;
 
     transition: 0.5s;
 
@@ -332,8 +333,11 @@ p{
     color: #9a9a9a;
 }
 #greyLine{
-    border: thin solid #9a9a9a;
+    border:0;
+    border-top: thin solid #9a9a9a;
     margin-top:5px;
+
+
 }
 
 .event-type{
@@ -385,8 +389,25 @@ p{
 }
 .events a{
     text-decoration: none;
-    color: #9a9a9a;
+    color: white;
+    background-color:#F7941EFF;
+
+    padding: 5px;
+
+
 }
-.events a:hover {
-    color: #F7941EFF;
+.events{
+    position: relative;
+}
+#triangle-down{
+    width:0;
+    height: 0;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #F7941EFF;
+
+    position: absolute;
+    top:21px;
+    left: 55px;
 }
