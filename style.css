@@ -371,21 +371,27 @@ p{
     color: #9a9a9a;
 }
 .music a:hover {
-    color: #F7941EFF;
+    color: white;
+    background-color: #F7941EFF;
+    padding: 5px;
 }
 .movies a{
     text-decoration: none;
     color: #9a9a9a;
 }
 .movies a:hover {
-    color: #F7941EFF;
+    color: white;
+    background-color: #F7941EFF;
+    padding: 5px;
 }
 .dining a{
     text-decoration: none;
     color: #9a9a9a;
 }
 .dining a:hover {
-    color: #F7941EFF;
+    color: white;
+    background-color: #F7941EFF;
+    padding: 5px;
 }
 .events a{
     text-decoration: none;
@@ -410,4 +416,76 @@ p{
     position: absolute;
     top:21px;
     left: 55px;
+}
+.date{
+    margin-top:20px;
+    position: relative;
+}
+.event-specifies select {
+    -webkit-appearance: none;
+
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+
+    border:thin solid black;
+
+    padding-left: 4px;
+    margin-left: 0px;
+
+}
+
+/*Gestione della freccia per selezione del menù*/
+.custom-arrow{
+    position: absolute;
+    top:0;
+    right: 0;
+
+    display: block;
+
+    height: 100%;
+    width: 2rem;
+
+    border: thin solid black;
+    border-left: 0 transparent;
+
+    pointer-events: none;
+}
+
+.custom-arrow::before,
+.custom-arrow::after{
+    --size: 0.30em;
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left:50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+
+    top: 40%;
+}
+.custom-arrow::after{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+
+    top:60%;
+}
+
+.categories{
+    position: relative;
+    margin-top: 10px;
+}
+.position{
+    position: relative;
+    margin-top: 10px;
 }
