@@ -50,6 +50,15 @@ a{
 .img-info a:hover{
     color:rgb(247,148,30);
 }
+#greyBox{
+    border:1px solid #ccc9;
+    padding:5px 20px;
+    cursor:pointer;
+}
+#greyBox:hover{
+    border-color: white;
+    transition: 0.3s;
+}
 h3{
 
     margin-top:6px;
@@ -96,7 +105,6 @@ p{
     z-index: 20;
 
     transition: 0.5s;
-
 }
 #support-white{
     color: white;
@@ -122,7 +130,6 @@ p{
 .fa-cog{
     color: white;
 }
-
 
 .Logo-conteiner {
     width: 100%;
@@ -156,9 +163,8 @@ p{
 }
 
 .navbar{
-    max-width: 1020px;
+    width: 1020px;
     background-color: white;
-
 }
 
 .navbar ul{
@@ -176,29 +182,49 @@ p{
     justify-content: center;
     align-items:last baseline;
 
+    font-family: Lato, Helvetica, Arial, sans-serif;
+
 }
 .navbar ul li a{
     font-family: 'Open Sans Condensed', sans-serif;
     color: black;
 
-    font-weight: 700;
 
     margin: 4px;
 
     transition: 100ms;
 }
-#newItem{
+.navbar ul li a p{
+    font-weight: 700;
+    margin:0;
+    padding: 0;
 
+    font-size: 16px;
+}
+#newItem{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding-right: 0;
 }
+
 #newItem a{
     background-color: rgb(247,148,30);
     color: white;
-    padding:1px;
-    margin-bottom:0;
+    padding-bottom:3px;
+    padding-top: 3px;
+    margin-bottom: 0;
+
+
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#newItem a p{
+    font-weight: 700;
+    margin:0;
+    padding: 0;
+
+    line-height: 1.3;
+    font-size: 13px;
 }
 .navbar ul li a:hover {
     background-color: rgb(247,148,30);
@@ -234,6 +260,11 @@ p{
     margin:0;
     display: flex;
     justify-content: center;
+}
+.item:hover{
+    background-color: rgb(247,148,30);
+    color: white;
+    padding: 0 1px;
 }
 
 .undercontent{
@@ -454,6 +485,9 @@ p{
 .date{
     margin-top:20px;
     position: relative;
+   /* border: 0.15rem solid #ccc;
+    border-radius: 0;
+    box-shadow: none;*/
 }
 .event-specifies select {
     -webkit-appearance: none;
@@ -462,7 +496,8 @@ p{
     height: 40px;
     border-radius: 0;
 
-    border:thin solid black;
+
+    border:thin solid #ccc;
 
     padding-left: 6px;
 
@@ -479,7 +514,7 @@ p{
     height: 100%;
     width: 2rem;
 
-    border: thin solid black;
+    border: thin solid #ccc;
     border-left: 0 transparent;
 
     pointer-events: none;
@@ -536,7 +571,7 @@ p{
     width: 80%;
     height: 40px;
 
-    border: thin solid black;
+    border: thin solid #ccc;
     margin-right: 5px;
 
 }
@@ -547,7 +582,7 @@ p{
 
     background: white;
     color: black;
-    border: thin solid black;
+    border: thin solid #ccc;
 
     font-family: Lato, Helvetica, Arial, sans-serif;
 
@@ -560,6 +595,14 @@ p{
     cursor: pointer;
     color: white;
     background-color:#F7941EFF ;
+}
+option{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    color:black;
+
+
 }
 
 .the-latest{
