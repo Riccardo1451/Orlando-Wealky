@@ -178,6 +178,7 @@ ul#menu li{
 
     margin-right: 9px;
     padding: 2px 1px 2px 1px;
+
 }
 ul#menu li a{
     font-family: 'Overpass',sans-serif;
@@ -186,6 +187,7 @@ ul#menu li a{
     font-weight: 700;
 
     font-size: 14px;
+
 }
 
 ul#menu li:hover{
@@ -194,10 +196,6 @@ ul#menu li:hover{
 ul#menu li:hover > a{
     color: white;
 }
-
-
-
-
 #newItem{
     display: flex;
     justify-content: center;
@@ -237,20 +235,10 @@ ul#menu li:hover > a{
 #rettOrange > a{
     color:white!important;
 }
-.item{
-    padding:0;
-    margin:4px;
-    display: inline;
-    justify-content: center;
-
-
-}
-li .item:hover{
-    background-color: rgb(247,148,30);
-    padding: 0 1px;
-}
-li .item:hover > a{
-    color:white!important;
+.icon{
+    cursor:pointer;
+    padding:2px 15px 2px 15px!important;
+    margin:2px!important;
 }
 
 .undercontent{
