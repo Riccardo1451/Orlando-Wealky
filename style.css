@@ -131,76 +131,73 @@ p{
     color: white;
 }
 
-.Logo-conteiner {
+.logo-conteiner {
     width: 100%;
+    max-width: 1020px;
     height: 110px;
 
-    display: flex;
-    flex-direction: column;
+   display: flex;
 
-    justify-content: center;
-    align-items: center;
+
+    justify-content: left;
 
     overflow: hidden;
 }
 .logo{
-    width: 1020px;
-    margin: 5px;
-
+    margin: 5px 0 10px 0;
 }
-.sticky-nav{
+.sticky-header{
     width: 100%;
-    height: 23px;
+
+    position: sticky;
+    top:-110px;
+    z-index: 1000;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    text-align: center;
 }
+.nav-bar{
+    width: 100%;
+    max-width: 1020px;
 
-.navbar{
-    width: 1020px;
     background-color: white;
 }
-
-.navbar ul{
-    list-style: none;
-    padding: 0;
-}
-
-.navbar ul li {
-
-    margin-right: 0; /* Rimuovi il margine destro */
-    margin-bottom: 0;
-    padding-right: 8px; /* Aggiungi il padding destro */
+.responsive-bar{
+    width: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items:last baseline;
-
-    font-family: Lato, Helvetica, Arial, sans-serif;
-
+    justify-content: flex-start;
 }
-.navbar ul li a{
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: black;
-
-
-    margin: 4px;
-
-    transition: 100ms;
+ul#menu{
+    padding-left: 4px;
 }
-.navbar ul li a p{
+ul#menu li{
+    display: inline;
+
+    margin-right: 9px;
+    padding: 2px 1px 2px 1px;
+}
+ul#menu li a{
+    font-family: 'Overpass',sans-serif;
+    color:#000;
+    text-transform: uppercase;
     font-weight: 700;
-    margin:0;
-    padding: 0;
 
-    font-size: 16px;
+    font-size: 14px;
 }
+
+ul#menu li:hover{
+    background-color: rgb(247,148,30);
+}
+ul#menu li:hover > a{
+    color: white;
+}
+
+
+
+
 #newItem{
     display: flex;
     justify-content: center;
@@ -226,45 +223,34 @@ p{
     line-height: 1.3;
     font-size: 13px;
 }
-.navbar ul li a:hover {
-    background-color: rgb(247,148,30);
-    color: white;
-    margin-bottom: 0;
-    padding-bottom: 3px;
-    padding-top: 3px;
-}
 
-.bar {
-    display: flex; /* Imposta il layout flessibile */
-    flex-wrap: nowrap; /* Evita che gli elementi vadano a capo */
-}
-
-.bar li {
-    flex: 1; /* Distribuisci lo spazio disponibile in modo equo tra gli elementi */
-    white-space: nowrap; /* Impedisce alle voci di andare a capo */
-}
 #hrOrange{
     border: 0.5px solid rgb(247,148,30);
+    width: 100%;
 }
 #rettOrange{
     background-color: rgb(247,148,30);
-    color: white;
 
     margin-bottom: 0;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding: 2px 1px 2px 1px;
 }
-
+#rettOrange > a{
+    color:white!important;
+}
 .item{
-    padding: 0;
-    margin:0;
-    display: flex;
+    padding:0;
+    margin:4px;
+    display: inline;
     justify-content: center;
+
+
 }
-.item:hover{
+li .item:hover{
     background-color: rgb(247,148,30);
-    color: white;
     padding: 0 1px;
+}
+li .item:hover > a{
+    color:white!important;
 }
 
 .undercontent{
@@ -282,11 +268,10 @@ p{
 }
 
 .main-content{
-    width: 60%;
-    min-width: 1020px;
+    width: 100%;
+    max-width: 980px;
 
     margin-top:40px;
-    padding: 0 10px;
     position: relative;
 
 }
@@ -324,8 +309,7 @@ p{
 
 .right-content {
     width: calc(100% * 1 / 3);
-    height: auto;
-
+    height: 1160px;
     position: absolute;
     right: 0;
     top: 0;
@@ -333,7 +317,7 @@ p{
     display: flex;
     justify-content: center;
 
-    margin-right: 25px;
+    margin: 0;
 }
 
 .intestazione-right-content{
@@ -345,6 +329,7 @@ p{
     font-size: 23px;
     color: #F7941EFF;
     letter-spacing: 2px;
+
     position: relative;
     display: inline-block;
 
