@@ -180,7 +180,7 @@ ul#menu li{
     position: relative;
 
     margin-right: 9px;
-    padding: 2px 1px 2px 1px;
+    padding: 5px 1px 2px 1px;
 
 }
 ul#menu li a{
@@ -236,8 +236,8 @@ ul#menu li:hover > a{
 }
 .icon{
     cursor:pointer;
-    padding:2px 15px 2px 15px!important;
-    margin:2px!important;
+    padding:4px 15px 4px 15px!important;
+    margin-right:2px!important;
 }
 
 /*Getione dropdown menu*/
@@ -282,12 +282,15 @@ ul#menu li:hover > a{
     justify-content: center;
 
     width: 100%;
-
+    min-height: 1100px;
     overflow: visible;
-    min-height: 1200px;
+
 
     position: relative;
     z-index: 1;
+
+    margin-bottom: 40px;
+
 
 }
 
@@ -610,21 +613,20 @@ option{
     font-size: 16px;
 
     color:black;
-
-
 }
 
 .the-latest{
     width:100%;
-
+    height: 700px;
     display: flex;
     justify-content: center;
 
     position: relative;
 }
 .intestazione-latest{
-    width:60%;
-    min-width: 1020px;
+    width: 100%;
+    max-width: 980px;
+
 
     display: flex;
     justify-content: center;
@@ -655,8 +657,8 @@ option{
     right:0;
 }
 .grid-latest{
-    width: 60%;
-    min-width: 1020px;
+    width: 100%;
+    max-width: 989px;
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -668,67 +670,46 @@ option{
     height:700px;
 
 }
+.latest-padding-img{
+    padding-left: 6px;
+}
 .latest-1{
     grid-column-start: 1;
-
-    text-align: left;
-}
-.testo-latest-1{
-    padding-right: 25px;
 }
 .latest-2{
     grid-column-start: 2;
-
-    text-align: center;
-}
-.testo-latest-2,.testo-latest-3{
-    text-align: left;
-    padding: 0 12px 0 12px;
 }
 .latest-3{
     grid-column-start: 3;
-
-    text-align: center;
 }
 
 .latest-4{
     grid-column-start: 4;
 
-    text-align: right;
-}
-.testo-latest-4{
-    text-align: left;
-    padding-left:25px;
 }
 .latest-5{
     grid-column-start: 1;
     grid-row-start:2;
-
-    text-align: left;
 }
 .latest-6{
     grid-column-start: 2;
     grid-row-start:2;
-
-    text-align: center;
 }
 .latest-7{
     grid-column-start: 3;
     grid-row-start:2;
-
-    text-align: center;
 }
 .latest-8{
     grid-column-start: 4;
     grid-row-start:2;
-
-    text-align: right;
 }
 .paragrafo-latest{
     font-size: 1.15rem;
     line-height: 1.15rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+
+    padding-right: 1px;
 }
 .testo-latest-1 a,.testo-latest-2 a, .testo-latest-3 a, .testo-latest-4 a{
     text-decoration: none;
@@ -739,6 +720,7 @@ option{
     font-size: 14px;
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
+    padding-right: 1px;
 }
 .latest-1:hover a, .latest-2:hover a, .latest-3:hover a, .latest-4:hover a,
 .latest-5:hover a, .latest-6:hover a ,.latest-7:hover a, .latest-8:hover a{
@@ -747,15 +729,35 @@ option{
 }
 
 @media (min-width: 998px){
-    .sticky-nav{
+    .sticky-header{
         transform: translate(-8px ,0);
+    }
+    .fa.fa-bars{
+        display: none;
     }
 }
 @media (max-width: 998px){
-    .sticky-nav{
+    .nav-bar{
         display: none;
     }
-    .logo{
+    .sticky-header{
+        position: sticky;
+        top: 0px;
+
+        background-color: white;
+
+        display: grid;
+        grid-te: 20% 60% 20%;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .bars{
+
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo-conteiner{
         display: flex;
         justify-content: center;
     }
