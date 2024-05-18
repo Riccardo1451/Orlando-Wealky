@@ -395,6 +395,9 @@ ul#menu li:hover > a{
     padding:0 30px 0 30px;
 
     width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 .all-event a {
     color: #9a9a9a;
@@ -402,10 +405,16 @@ ul#menu li:hover > a{
 .all-event a:hover{
     color:#F7941EFF ;
 }
-.all-event span{
-    color: #9a9a9a;
+.span{
+    display: inline-block;
 }
-
+.space-tween{
+    margin:0 3px;
+}
+.space-tween a:hover{
+    cursor: default;
+    color:#9a9a9a;
+}
 #greyLine{
     border:0;
     border-top: thin solid #9a9a9a;
@@ -826,9 +835,13 @@ option{
 
         padding: 0 9px;
     }
-    .intestazione-right-content:before{
-        width: 300%;
-        left: -300px;
+    .intestazione-right-content h3:before{
+        width: 220%;
+        left: -247px;
+    }
+    .intestazione-right-content h3:after{
+        width:220%;
+        right: -247px;
     }
     .right-news{
         width: 100%;
@@ -859,7 +872,7 @@ option{
         justify-content: center;
 
         position: absolute;
-        top: 2300px;
+        top: 2150px;
     }
     .grid-latest{
         grid-template-columns: 50% 50%;
@@ -896,6 +909,6 @@ option{
         padding-left:5px;
     }
     .right-content{
-        height:960px;
+        height:860px;
     }
 }
