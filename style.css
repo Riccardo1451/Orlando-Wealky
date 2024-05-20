@@ -808,6 +808,8 @@ option{
     .main-content{
         display: flex;
         justify-content: center;
+        height: 2020px;
+
     }
     .left-content{
         width: 100%;
