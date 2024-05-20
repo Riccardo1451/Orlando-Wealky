@@ -846,8 +846,36 @@ option{
     height: 15px; /* Altezza della linea */
     background-color: #9a9a9a; /* Colore della linea */
 }
+footer{
+    margin-top: 60px;
+    width:100%;
+    display: flex;
+    justify-content: center;
 
+    height: 500px;
+}
+.footer-grid{
+    width:100%;
+    max-width: 998px;
 
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.footer-column1{
+    grid-column-start: 1;
+}
+.footer-column2{
+    grid-column-start: 2;
+}
+.footer-column3{
+    grid-column-start: 3;
+}
+.footer-column4{
+    grid-column-start: 4;
+}
+.footer-column5{
+    grid-column-start: 5;
+}
 @media (min-width: 998px){
     .sticky-header{
         transform: translate(-8px ,0);
