@@ -226,7 +226,11 @@ ul#menu li:hover > a{
 }
 
 /*Getione dropdown menu*/
+#search-hover{
+    right: 0;
+    left:unset;
 
+}
 .responsive-bar li ul{
     display: none;
     position: absolute; /* Posizione assoluta per il dropdown */
@@ -908,5 +912,67 @@ option{
     }
     .right-content{
         height:860px;
+    }
+}
+@media (max-width: 639px){
+    .double-news{
+
+    }
+    .news1{
+        width: 100%;
+        position: static;
+    }
+    .news1 img{
+        width: 100%;
+        height: auto;
+    }
+    .news2{
+        width: 100%;
+        position: static;
+    }
+    .news2 img{
+        width: 100%;
+        height: auto;
+    }
+    .right-content{
+        top:1600px;
+    }
+    .the-latest{
+        top:2700px;
+    }
+    .main-content{
+        height: 3500px;
+    }
+    .main-news{
+        width: 100%;
+    }
+    .main-news img{
+        width: 100%;
+        height: auto;
+    }
+    .right-content{
+        width: 100%;
+        height: auto;
+    }
+    .news-research{
+        width: 100%;
+        height: auto;
+    }
+    .intestazione-right-content{
+       /* width:100%;*/
+        height: auto;
+    }
+    .right-news img{
+        width: 100%;
+        height: auto;
+    }
+    .the-latest img{
+        width:100%;
+        height: auto;
+    }
+    #support{
+        height: 20px;
+        padding:5px;
+        top:30%;
     }
 }
