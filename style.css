@@ -343,7 +343,8 @@ ul#menu li:hover > a{
     margin: 0;
 }
 
-.intestazione-right-content{
+.intestazione-right-content{ /*Successivamente è stato usato un altro metodo per creare le line
+semplicemente con una div sopra e sotto e alcune regole css*/
     position: absolute;
     top:0;
 }
@@ -738,51 +739,114 @@ option{
     max-width: 980px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
 }
 .grid-item1{
     grid-column-start: 1;
+    grid-row-start: 1;
     display: grid;
-
-
+    height: auto;
 }
 .grid-item2{
     grid-column-start: 3;
+    grid-row-start: 1;
     display: grid;
+    height: auto;
+}
+.grid-item3{
+    margin-top:20px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.grid-item4{
+    margin-top:20px;
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
 .block-grid{
     position: relative;
     margin-top:10px;
 }
+.block-grid p{
+    display: inline-block;
+    position: absolute;
+    top:0;
+}
 .grid-3-layout img{
     margin-right: 5px;
 }
-.intestazione-grid h3{
+.intestazione-grid {
+     display: flex;
+     align-items: center;
+     width: 100%;
+ }
+
+.intestazione-grid h3 {
     font-size: 23px;
     color: #F7941EFF;
     letter-spacing: 2px;
-
+    margin: 0 15px;
     position: relative;
-    display: inline-block;
-
-    margin:0;
+    white-space: nowrap;
 }
 
-.intestazione-grid h3:before{
-    content:"";
-    border: 1px solid #9a9a9a;
-    position: absolute;
-    width: 80%;
-    top: 13.25px;
-    left: -110px;
+.line {
+
+    flex: 1;
+    height: 2px;
+    background: #9a9a9a;
 }
-.intestazione-grid h3:after{
+.section-teaser{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+.section-teaser a{
+    color:white;
+    padding:5px;
+}
+.white-hover{
+    background-color:#F7941EFF ;
+    padding:5px;
+    border:1px solid #F7941EFF
+}
+.white-hover:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.white-hover:hover > a{
+    color:#F7941EFF;
+}
+.section-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-link a{
+    color:black;
+    position: relative;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: inherit;
+}
+.section-link a:hover{
+    color: #f7941eff;
+    transition: 0.2s;
+}
+.section-link a:last-child:before{/*prima dell'ultimo figlio*/
     content: "";
-    border: 1px solid #9a9a9a;
     position: absolute;
-    width: 80%;
-    top: 13.25px;
-    right: -110px;
+    left: -5px; /* Regola questa proprietà per posizionare la linea correttamente */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 15px; /* Altezza della linea */
+    background-color: #9a9a9a; /* Colore della linea */
 }
+
 
 @media (min-width: 998px){
     .sticky-header{
