@@ -944,7 +944,7 @@ footer{
 .origin{
     margin-top:10px;
     width:100%;
-    max-width: 998px;
+    max-width:980px;
 }
 .left-text-footer{
     width: 20%;
@@ -957,4 +957,17 @@ footer{
 }
 #autore-footer{
     font-size: 12px;
+}
+
+.footer-logo1{
+    grid-column-start: 1;
+}
+.footer-logo2{
+    grid-column-start: 2;
+}
+.footer-logo3{
+    grid-column-start: 3;
+}
+.footer-logo4{
+    grid-column-start: 4;
 }

@@ -26,7 +26,7 @@
     }
 
 }
-@media (max-width: 998px){ /*FIXME: sistemare il grid-conteiner*/
+@media (max-width: 998px){
     .nav-bar{
         display: none;
     }
@@ -259,17 +259,18 @@
         height: 500px;
     }
     .origin{
-        margin-left: 10px;
+        width: 100%;
+        max-width:622px ;
     }
     .left-text-footer{
         width: 100%;
-        margin-left: 10px;
+    }
+    .credits{
+        width: 100%;
+        max-width: 622px;
     }
 }
 @media (max-width: 639px){
-    .double-news{
-
-    }
     .news1{
         width: 100%;
         position: static;
@@ -334,6 +335,11 @@
     }
     .left-text-footer{
         width:100%;
-        margin-left: 10px;
+    }
+    .credits{
+        width: 100%;
+    }
+    .origin{
+        width: 100%;
     }
 }
