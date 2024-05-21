@@ -348,6 +348,12 @@
     .origin{
         width: 100%;
     }
+    .event-type{
+        grid-column-gap: 10px;
+    }
+    .movies, .dining, .music{
+        width: 40%;
+    }
 }
 @media (max-width: 622px){
     .footer-logo1 img,
@@ -362,4 +368,12 @@
     .origin{
         width: 90%;
     }
+     .movies, .dining, .music{
+        width: 20%;
+    }
+    .event-type{
+        grid-column-gap: 10px;
+    }
+    .events{width: 80px}
+
 }
