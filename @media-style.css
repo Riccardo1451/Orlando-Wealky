@@ -257,7 +257,7 @@
         display: none;
     }
     footer{
-        height: 500px;
+        height: 400px;
     }
     .origin{
         width: 100%;
@@ -304,7 +304,7 @@
     .right-content{
         width: 100%;
         height: 900px;
-        top:1600px;
+        top:1400px;
         margin:5px;
 
         display: flex;
@@ -324,6 +324,9 @@
         width: 100%;
         height: auto;
     }
+    .the-latest{
+        top:2400px;
+    }
     .the-latest img{
         width:100%;
         height: auto;
@@ -334,10 +337,10 @@
         top:30%;
     }
     .grid-conteiner{
-        top:3400px;
+        top:3100px;
     }
     footer{
-        top:5400px;
+        top:5100px;
     }
     .left-text-footer{
         width:100%;
