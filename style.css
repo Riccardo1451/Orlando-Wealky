@@ -338,7 +338,7 @@ ul#menu li:hover > a{
 }
 
 .right-content {
-    width: calc(100% * 1 / 3);
+    width: calc(100%*1/3);
     max-width: 320px;
     height: 1160px;
     position: absolute;
@@ -636,38 +636,20 @@ option{
     display: flex;
     justify-content: center;
 }
-.intestazione-latest{
+.intestazione-latest {
     width: 100%;
     max-width: 980px;
 
 
     display: flex;
-    justify-content: center;
-
-    position: relative;
+    align-items: center;
 }
 .intestazione-latest h3{
     font-size: 23px;
     color: #F7941EFF;
     letter-spacing: 2px;
 
-    margin:0;
-}
-.intestazione-latest h3:before{
-    content:"";
-    border: 1px solid #9a9a9a;
-    position: absolute;
-    width: 40%;
-    top: 14px;
-    left:0;
-}
-.intestazione-latest h3:after{
-    content: "";
-    border: 1px solid #9a9a9a;
-    position: absolute;
-    width: 40%;
-    top: 14px;
-    right:0;
+    margin:0 15px;
 }
 .grid-latest{
     width: 100%;
