@@ -1,3 +1,9 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x: clip; /*Utile a non avere scroll orizzontale mantenendo la navbar sticky*/
+}
 *{
     margin: 0;
     box-sizing: border-box;
@@ -277,9 +283,10 @@ ul#menu li:hover > a{
     height: 100%;
 
     position: relative;
-    z-index: 1;
+    z-index: 0;
 
     margin-bottom: 40px;
+
 
 
 }
@@ -348,6 +355,10 @@ ul#menu li:hover > a{
 semplicemente con una div sopra e sotto e alcune regole css*/
     position: absolute;
     top:0;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .intestazione-right-content h3{
@@ -358,9 +369,9 @@ semplicemente con una div sopra e sotto e alcune regole css*/
     position: relative;
     display: inline-block;
 
-    margin:0;
+    margin:0 15px;
 }
-.intestazione-right-content h3:before{
+/*.intestazione-right-content h3:before{
     content:"";
     border: 1px solid #9a9a9a;
     position: absolute;
@@ -375,7 +386,7 @@ semplicemente con una div sopra e sotto e alcune regole css*/
     width: 80%;
     top: 13.25px;
     right: -110px;
-}
+}*/
 
 .news-research{
     position: absolute;

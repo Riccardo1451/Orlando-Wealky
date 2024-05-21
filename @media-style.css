@@ -147,6 +147,7 @@
     }
     .the-latest{
         width: 100%;
+        max-width: 998px;
         display: flex;
         justify-content: center;
 
@@ -193,6 +194,7 @@
     .grid-conteiner{
 
         width:100%;
+        max-width: 998px;
 
         position: absolute;
         top:2900px;
@@ -248,6 +250,7 @@
     footer{
         position: absolute;
         top:4900px;
+        max-width: 998px;
     }
     .footer-grid{
         display: none;
@@ -283,9 +286,6 @@
         width: 100%;
         height: auto;
     }
-    .right-content{
-        top:1600px;
-    }
     .the-latest{
         top:2700px;
     }
@@ -302,6 +302,8 @@
     .right-content{
         width: 100%;
         height: auto;
+        top:1600px;
+        margin:5px;
     }
     .news-research{
         width: 100%;
