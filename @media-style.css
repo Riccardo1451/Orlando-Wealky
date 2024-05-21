@@ -1,0 +1,249 @@
+
+@media (min-width: 998px){
+    .sticky-header{
+        transform: translate(-8px ,0);
+    }
+    .bars .fa-bars{
+        display: none;
+    }
+    .find-icon .fa-search{
+        display: none;
+    }
+    .media-logo{
+        display: none;
+    }
+    .left-img-media{
+        display: none;
+    }
+    .right-img-media{
+        display: none;
+    }
+    .latest-img-media{
+        display: none;
+    }
+
+}
+@media (max-width: 998px){ /*FIXME: sistemare il grid-conteiner*/
+    .nav-bar{
+        display: none;
+    }
+    .sticky-header{
+        width:100%;
+
+        position: sticky;
+        top: 0;
+
+        background-color: white;
+
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 33% 33% 33%;
+
+        box-shadow: 0 2px 2px 0 #3333;
+    }
+    .bars{
+        grid-row-start:2;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        font-size: 32px;
+
+        margin-left:10px;
+    }
+    .find-icon{
+        grid-row-start: 2;
+        grid-column-start: 3;
+
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        font-size: 30px;
+
+        margin-right: 10px;
+
+    }
+
+    .logo-conteiner{
+        grid-row-start: 2;
+        grid-column-start: 2;
+
+        display: flex;
+        justify-content: center;
+
+    }
+    .logo{display: none}
+    .media-logo{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+    /*622 x 348 img media*/
+    .main-content{
+        display: flex;
+        justify-content: center;
+        height: 2020px;
+
+    }
+    .left-content{
+        width: 100%;
+        max-width: 640px;
+        position: static;
+
+        padding: 0 9px;
+    }
+    .left-img{
+        display: none;
+    }
+    .left-img-media{
+        display: block;
+    }
+    .right-content{
+        width:100%;
+        max-width:640px;
+        position: absolute;
+        top: 1060px;
+        right: unset;
+
+        padding: 0 9px;
+    }
+    .intestazione-right-content h3:before{
+        width: 220%;
+        left: -247px;
+    }
+    .intestazione-right-content h3:after{
+        width:220%;
+        right: -247px;
+    }
+    .right-news{
+        width: 100%;
+        max-width: 600px;
+    }
+    .right-img{
+        display: none
+    }
+    .right-img-media{
+        display: block;
+    }
+    .event-type{
+        width: 100%;
+        grid-column-gap: 20px;
+    }
+    .events, .movies, .dining, .music{
+        width: 60%;
+    }
+    .music:hover,.movies:hover,.dining:hover{
+        background-color:#F7941EFF;
+    }
+    .all-event{
+        padding:0 20px 0 20px;
+    }
+    .the-latest{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 2150px;
+    }
+    .grid-latest{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+
+        max-width: 622px;
+        height: 650px;
+    }
+    .latest-3, .latest-4, .latest-7, .latest-8{
+        display: none;
+    }
+    .latest-img{
+        display: none;
+    }
+    .latest-img-media{
+        display: block;
+    }
+
+    .media-latest-centered{
+        display: block;
+        width:100%;
+        max-width: 622px;
+    }
+    .intestazione-latest h3:before{
+        width:35%;
+    }
+    .intestazione-latest h3:after{
+        width:35%
+    }
+    .latest-padding-img{
+        padding:0;
+    }
+    .latest-padding-media{
+        padding-left:5px;
+    }
+    .right-content{
+        height:860px;
+    }
+}
+@media (max-width: 639px){
+    .double-news{
+
+    }
+    .news1{
+        width: 100%;
+        position: static;
+    }
+    .news1 img{
+        width: 100%;
+        height: auto;
+    }
+    .news2{
+        width: 100%;
+        position: static;
+    }
+    .news2 img{
+        width: 100%;
+        height: auto;
+    }
+    .right-content{
+        top:1600px;
+    }
+    .the-latest{
+        top:2700px;
+    }
+    .main-content{
+        height: 3500px;
+    }
+    .main-news{
+        width: 100%;
+    }
+    .main-news img{
+        width: 100%;
+        height: auto;
+    }
+    .right-content{
+        width: 100%;
+        height: auto;
+    }
+    .news-research{
+        width: 100%;
+        height: auto;
+    }
+    .intestazione-right-content{
+        /* width:100%;*/
+        height: auto;
+    }
+    .right-news img{
+        width: 100%;
+        height: auto;
+    }
+    .the-latest img{
+        width:100%;
+        height: auto;
+    }
+    #support{
+        height: 20px;
+        padding:5px;
+        top:30%;
+    }
+}
