@@ -765,6 +765,11 @@ option{
     display: inline-block;
     position: absolute;
     top:0;
+    margin-top:0;
+
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 .grid-3-layout img{
     margin-right: 5px;
@@ -877,8 +882,11 @@ footer{
     color:#f7941eff !important;
 }
 .footer-subtitle{
+    margin-top: 10px;
+
     color:black !important;
-    font-size:18px !important;
+    font-size:16px !important;
+    font-weight: 700;
 }
 .footer-column2{
     grid-column-start: 2;
@@ -936,6 +944,9 @@ footer{
 .left-text-footer i{
     font-size: 28px;
     margin:5px 5px 5px 0;
+}
+.left-text-footer p{
+    margin-top:5px;
 }
 #autore-footer{
     font-size: 12px;
